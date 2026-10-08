@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Learning Mentor</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- Header -->
+    <header class="header">
+      <h1>🎓 AI Learning Mentor</h1>
+      <p class="subtitle">Your AI assistant for learning and studying</p>
+      <p class="sdg-badge">🌍 UN SDG 4 – Quality Education</p>
+    </header>
+
+    <!-- Example prompts -->
+    <section class="prompts">
+      <p class="prompts-label">Try asking:</p>
+      <div class="prompt-chips">
+        <button class="chip" onclick="usePrompt('Explain a difficult topic')">💡 Explain a difficult topic</button>
+        <button class="chip" onclick="usePrompt('Create a study plan for my exams')">📅 Create a study plan</button>
+        <button class="chip" onclick="usePrompt('Give me 5 quiz questions about photosynthesis')">📝 Generate quiz questions</button>
+        <button class="chip" onclick="usePrompt('Summarize the water cycle in simple words')">📖 Summarize a topic</button>
+      </div>
+    </section>
+
+    <!-- Chat area -->
+    <main class="chat-container">
+      <div id="chat-box" class="chat-box">
+        <div class="message ai-message">
+          <span class="sender">🤖 Mentor</span>
+          <div class="bubble">
+            Hello! I'm your AI Learning Mentor. Ask me anything — I can explain topics, create study plans, generate quiz questions, or summarize concepts. What would you like to learn today?
+          </div>
+        </div>
+      </div>
+
+      <!-- Input row -->
+      <div class="input-row">
+        <textarea
+          id="user-input"
+          class="user-input"
+          placeholder="Type your question here…"
+          rows="1"
+        ></textarea>
+        <button id="send-btn" class="btn btn-primary" onclick="sendMessage()">Send</button>
+        <button class="btn btn-secondary" onclick="clearChat()">Clear</button>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

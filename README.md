@@ -69,7 +69,7 @@ AI-Learning-Mentor/
     └── script.js
 9. Local Setup
 Clone the project
-git clone https://github.com/Kripank/AI-Learning-Mentor.git
+git clone https://github.com/aarshisoni/AI_Learning_Mentor_IBM.git
 cd AI-Learning-Mentor
 Create a virtual environment (optional)
 Windows:
@@ -124,5 +124,5 @@ Follow-up Chat	Allows natural conversation
 - Educational resource integration
 - Teacher/institution dashboards
 Author
-Kripank Kumbhare
+Aarshi Soni
 Built as a college internship project demonstrating AI/LLM-based Agentic AI for SDG 4 – Quality Education.
